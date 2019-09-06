@@ -1,0 +1,96 @@
+[Appium] Welcome to Appium v1.8.1
+[Appium] Non-default server args:
+[Appium]   port: 65219
+[Appium]   loglevel: info
+[Appium]   chromeDriverPort: 65220
+[Appium]   tmpDir: /var/folders/9b/47rf2vv11fj1yk4gcyvmgn980000gn/T//Katalon/Appium/Temp1567777959180
+[Appium] Appium REST http interface listener started on 0.0.0.0:65219
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[HTTP] <-- GET /wd/hub/status 200 21 ms - 83
+[HTTP] 
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[HTTP] <-- GET /wd/hub/status 200 15 ms - 83
+[HTTP] 
+[HTTP] --> POST /wd/hub/session
+[HTTP] {"desiredCapabilities":{"app":"/Users/macbookair/git/qa_advotics/APK/base.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"samsung SM-G935F (Android 8.0.0)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"9885e64d30594b4330"},"capabilities":{"desiredCapabilities":{"app":"/Users/macbookair/git/qa_advotics/APK/base.apk","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"samsung SM-G935F (Android 8.0.0)","fullReset":false,"newCommandTimeout":1800,"noReset":true,"platform":"ANDROID","platformName":"Android","udid":"9885e64d30594b4330"},"firstMatch":[{"platformName":"android"}]}}
+[Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["app","autoGrantPermissions","automationName","deviceName","fullReset","newCommandTimeout","noReset","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[Appium] Creating new AndroidUiautomator2Driver (v1.12.0) session
+[Appium] Capabilities:
+[Appium]   app: /Users/macbookair/git/qa_advotics/APK/base.apk
+[Appium]   autoGrantPermissions: true
+[Appium]   automationName: uiautomator2
+[Appium]   deviceName: samsung SM-G935F (Android 8.0.0)
+[Appium]   fullReset: false
+[Appium]   newCommandTimeout: 1800
+[Appium]   noReset: true
+[Appium]   platform: ANDROID
+[Appium]   platformName: Android
+[Appium]   udid: 9885e64d30594b4330
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: platform.
+[BaseDriver] Session created with session id: 9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4
+[BaseDriver] Using local app '/Users/macbookair/git/qa_advotics/APK/base.apk'
+[AndroidDriver] Java version is: 1.8.0_181
+[ADB] Checking whether adb is present
+[ADB] Found 1 'build-tools' folders under '/Users/macbookair/.katalon/tools/android_sdk' (newest first):
+[ADB]     /Users/macbookair/.katalon/tools/android_sdk/build-tools/29.0.2
+[ADB] Using adb from /Users/macbookair/.katalon/tools/android_sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[AndroidDriver] Using device: 9885e64d30594b4330
+[ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer in /Users/macbookair/.katalon/tools/android_sdk/platform-tools/apkanalyzer,/Users/macbookair/.katalon/tools/android_sdk/emulator/apkanalyzer,/Users/macbookair/.katalon/tools/android_sdk/tools/apkanalyzer,/Users/macbookair/.katalon/tools/android_sdk/tools/bin/apkanalyzer,/Users/macbookair/.katalon/tools/android_sdk/build-tools/29.0.2/apkanalyzer. Do you have the Android SDK installed at '/Users/macbookair/.katalon/tools/android_sdk'?
+[ADB] Checking whether aapt is present
+[ADB] Using aapt from /Users/macbookair/.katalon/tools/android_sdk/build-tools/29.0.2/aapt
+[ADB] Extracting package and launch activity from manifest
+[ADB] Package name: 'com.ebay.mobile'
+[ADB] Main activity name: 'com.ebay.mobile.activities.MainActivity'
+[ADB] Getting device platform version
+[ADB] Using apksigner from /Users/macbookair/.katalon/tools/android_sdk/build-tools/29.0.2/apksigner
+[ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+[ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+[AndroidDriver] setDeviceLanguageCountry requires language or country.
+[AndroidDriver] Got language: 'null' and country: 'null'
+[ADB] Successfully extracted 4581 strings from '/Users/macbookair/git/qa_advotics/APK/base.apk' resources for '(default)' configuration
+[UiAutomator2] Starting uiautomator2 server 1.12.0
+[UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.12.0.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[UiAutomator2] Running command: 'adb -s 9885e64d30594b4330 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+[UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+[AndroidDriver] Screen already unlocked, doing nothing
+[UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.ebay.mobile/com.ebay.mobile.activities.MainActivity'. Starting it ourselves
+[Appium] New AndroidUiautomator2Driver session created successfully, session 9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4 added to master session list
+[HTTP] <-- POST /wd/hub/session 200 19523 ms - 1156
+[HTTP] 
+[HTTP] --> GET /wd/hub/status
+[HTTP] {}
+[HTTP] <-- GET /wd/hub/status 200 21 ms - 55
+[HTTP] 
+[HTTP] --> POST /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/timeouts
+[HTTP] {"type":"implicit","ms":60000}
+[HTTP] <-- POST /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/timeouts 400 19 ms - 4181
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/source
+[HTTP] {}
+[W3C] Driver proxy active, passing request on via HTTP proxy
+[JSONWP Proxy] Replacing sessionId 04a345dd-8a93-4841-b191-0a8f7ba549a5 with 9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4
+[HTTP] <-- GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/source 200 945 ms - 29718
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/screenshot
+[HTTP] {}
+[HTTP] <-- GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/screenshot 200 547 ms - 227014
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/source
+[HTTP] {}
+[W3C] Driver proxy active, passing request on via HTTP proxy
+[JSONWP Proxy] Replacing sessionId 04a345dd-8a93-4841-b191-0a8f7ba549a5 with 9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4
+[HTTP] <-- GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/source 200 859 ms - 35528
+[HTTP] 
+[HTTP] --> GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/screenshot
+[HTTP] {}
+[HTTP] <-- GET /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4/screenshot 200 557 ms - 441386
+[HTTP] 
+[HTTP] --> DELETE /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4
+[HTTP] {}
+[Appium] Removing session 9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4 from our master session list
+[HTTP] <-- DELETE /wd/hub/session/9d5d5419-a585-4f89-9ff3-9d9ec16ea6c4 200 320 ms - 76
+[HTTP] 

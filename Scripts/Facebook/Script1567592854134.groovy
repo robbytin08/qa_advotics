@@ -13,3 +13,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://web.facebook.com')
+WebUI.setText(findTestObject('Facebook/Register/NamaDepan'), 'jima')
+WebUI.setText(findTestObject('Facebook/Register/NamaBelakang'), 'udin')
+WebUI.setText(findTestObject('Facebook/Register/EmailorPhoneSelluler'), 'jimaudin08@gmail.com')
+WebUI.setEncryptedText(findTestObject('Facebook/Register/Password'), 'iFGeFYmXIrX+UJDmlj2FnA==')
+WebUI.setText(findTestObject('Facebook/Register/verifyEmail'), 'jimaudin08@gmail.com')
+WebUI.click(findTestObject('Facebook/Register/day'))
+WebUI.delay(5)
+WebUI.selectOptionByValue(findTestObject('Facebook/Register/day'), '8', false)
+WebUI.click(findTestObject('Facebook/Register/mount'))
+WebUI.delay(5)
+WebUI.selectOptionByValue(findTestObject('Facebook/Register/mount'), '1', false)
+WebUI.click(findTestObject('Facebook/Register/year'))
+WebUI.delay(5)
+WebUI.selectOptionByValue(findTestObject('Facebook/Register/year'), '1996', false)
+WebUI.click(findTestObject('Facebook/Register/sex/input_Male'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Facebook/Register/Register'))
+
+WebUI.delay(10)
+
+WebUI.closeBrowser()
+
